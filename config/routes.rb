@@ -2,6 +2,7 @@ RailsMobiveil::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   match "api/reverse" => "api/v1/sessions#reverse_words_sequence"
+   match "api/push" => "api/v1/sessions#send_push_message"
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
